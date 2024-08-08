@@ -8,20 +8,6 @@ input_folder = "input"
 output_folder = "."
 output_name = "Summary"
 
-parser = argparse.ArgumentParser()
-parser.add_argument('-i', '--input', help='Path to input folder')
-parser.add_argument('-o', '--output', help='Path to output folder')
-parser.add_argument('-n', '--name', help='Name of the output file')
-args = parser.parse_args()
-
-if args.input:
-    input_folder = args.input
-if args.output:
-    output_folder = args.output
-if args.name:
-    output_name = args.name
-
-
 file_data = []
 file_names = []
 
